@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Happy 1st Mensive</title>
+</head>
+<body>
+    <div class="hearts-bg" id="heartsBackground"></div>
+
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>A Special Message Awaits!!</h1>
+            <p>Enter the secret password to unlock your Mensive's surprise...</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" />
+            <br>
+            <button class="enter-btn" onclick="checkPassword()">Enter</button>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #888;">Hint: The password is "drakor kita, lowercase no spasi" ❤️</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Happy 1st Mensive</h1>
+                <p>A special collection of our memories and love</p>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn active" onclick="showPage('album')">📸 Photo Album</button>
+                <button class="nav-btn" onclick="showPage('letter')">💌 Love Letter</button>
+            </div>
+
+            <div class="page active" id="album">
+                <h2 style="color: #c44569; margin-bottom: 20px; text-align: center;">Our Beautiful Memories 💕</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="asset/1st-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/2nd-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/3rd-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/4th-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/5th-pict.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="asset/6th-pict.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="letter">
+                <h2 style="color: #c44569; margin-bottom: 30px; text-align: center;">A Letter From My Heart 💌</h2>
+                <div class="love-letter">
+                    <p>For the best girlfriend ever..</p>
+                    <br>
+                    <p>Sayangg, hii, dengan Marleo Altair disini. Kamu kenalnya siapa? 🤨 Cowok kamu kan ya, haha. Iya aku pacar kamu, disini aku mau bilang kalau.. aku bangga sama kamu, bangga sekali!🤩 Kamu berhasil nyelesain kelas kamu hari ini, hebatt bangett, terus kamu presentasi yang padahal itu gak kamu suka bangett kan yaa? Sendirian lagi. Kerasa banget gimana dag dig dug nya, bahkan kamu udah deg deg an duluan sebelum maju, ngantuk nungguin giliran pula, mungkin orang lain ngomong "ah biasa aja" faktanyaa enggak kan bae😏 tenang aja kamu tuh deg deg an gitu gak lebay, gak alay atau norak sama sekali enggak, aku juga gak anggep gitu, justru memang itu perasaan yang sebenarnya banyak orang rasain, bahkan kalau aku jadi kamu, aku juga bakalan kayak gitu, sekarang kamu tetep mau laksanakan ajaa udah hebat, banget super duper hebat. </p>
+                    <br>
+                    <p>Kamu selalu sempurna dalam bentuk apapun deh, aku akui hal itu yaa.. meski cuma sekedar presentasi, tapi tetep aja, gak mudah pastinya buat kamu ngejalaninnya. 😅 Berusaha buat gak gugup, nge-jawab kalau ada pertanyaan, keren kamu, selalu keren cewek aku, banget, selain cantik juga kamu hebat, paket lengkap ah. 😉 Aku gak lagi gombal, atau bercanda ya tapi aku serius, aku mau apresiasi kamu, yang sudah berhasil melewati hari ini, gapapa ya sayang pacarannya ke-tunda sebentar, itu gak masalah besar buat kita.</p>
+                    <br>
+                    <p>Sesuai yang aku omongin, kita bakal pacaran selama-lamanya, jadi, ada kelas gini pun belum apa-apa nyaa, waktu pacaran kita masih banyak. 😎 Sekalian, aku mau ucapin terimakasih banyak ke kamu, atas kemauan ngejalaninnya yaaa, atas semangatnya juga meski ada rasa deg deg an. Terimakasih ya sayang? 🤗 </p>
+                    <br>
+                    <p> Gak hanya aku tentunya kamu juga bisa terimakasih ke diri kamu sendiri, jangan lupa untuk bangga sama diri sendiri, bersyukur oke? 😁 Aku disini selalu nungguin kamu, selalu bangga, mengapresiasi, memuji kapanpun aku mau, aku selaluu sayang sama kamu, Hannie Mielrose.💙</p>
+                    <br>
+                    <p style="text-align: right;">With all my love,<br> Marleo Altair</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" class="hidden-file-input" id="photoUpload" accept="image/*" onchange="handlePhotoUpload(event)">
+    <input type="file" class="hidden-file-input" id="puzzleImageUpload" accept="image/*" onchange="handlePuzzleImageUpload(event)">
+    <script src="asset/script.js" defer></script>
+</body>
+
+</html>
+
+
+
